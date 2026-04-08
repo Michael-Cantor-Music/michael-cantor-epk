@@ -1,10 +1,20 @@
 import Image from "next/image";
-import { getArtistImage } from "@/lib/spotify";
+import { getArtistImage, getLatestReleases } from "@/lib/spotify";
+import { extractPalette } from "@/lib/colors";
 
 export default async function EPK() {
-  const artistImage = await getArtistImage();
+  const [artistImage, releases] = await Promise.all([
+    getArtistImage(),
+    getLatestReleases(1),
+  ]);
+
+  const albumImageUrl = releases[0]?.image ?? "";
+  const palette = albumImageUrl ? await extractPalette(albumImageUrl) : { vibrant: "#c9b99a", darkVibrant: "#1a1a1a", muted: "#6a6460" };
+  const accent = palette.vibrant;
+
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-[#f0ede8]">
+    <main className="min-h-screen bg-[#0d0d0d] text-[#f0ede8]"
+      style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── HERO ── */}
       <section className="relative h-screen flex items-end overflow-hidden">
@@ -17,13 +27,13 @@ export default async function EPK() {
           style={{ filter: "brightness(0.5)" }}
         />
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
-          <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-3">
+          <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-3">
             Electronic Press Kit
           </p>
           <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4">
             Michael<br />Cantor
           </h1>
-          <p className="fade-up fade-up-3 text-lg md:text-xl text-[#c9b99a] font-light">
+          <p className="fade-up fade-up-3 text-lg md:text-xl text-[var(--accent)] font-light">
             Singer-songwriter · Folk / Pop · New York, NY
           </p>
         </div>
@@ -34,13 +44,13 @@ export default async function EPK() {
 
       {/* ── BIO ── */}
       <section id="bio" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">About</p>
+        <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">About</p>
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
               Music that stays with you.
             </h2>
-            <div className="w-12 h-px bg-[#c9b99a] mb-8" />
+            <div className="w-12 h-px bg-[var(--accent)] mb-8" />
             <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
                 src="/bio-photo.jpg"
@@ -67,7 +77,7 @@ export default async function EPK() {
       {/* ── MUSIC ── */}
       <section id="music" className="py-24 bg-[#111111]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Music</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Music</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Latest Releases</h2>
           <iframe
             src="https://open.spotify.com/embed/album/7MrQ6muRWJ8U0KSdGK63w2?utm_source=generator&theme=0"
@@ -99,7 +109,7 @@ export default async function EPK() {
 
       {/* ── LIVE ── */}
       <section id="live" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Live</p>
+        <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Live</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Past Performances</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
@@ -107,9 +117,9 @@ export default async function EPK() {
             { venue: "Levitt Pavilion", location: "Westport, CT", description: "Outdoor amphitheater bringing free, world-class performances to the community." },
           ].map((show) => (
             <div key={show.venue}
-              className="border border-[#2a2a2a] rounded-2xl p-8 hover:border-[#c9b99a] transition-colors">
+              className="border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
               <h3 className="text-2xl font-bold mb-1">{show.venue}</h3>
-              <p className="text-[#c9b99a] text-sm mb-4">{show.location}</p>
+              <p className="text-[var(--accent)] text-sm mb-4">{show.location}</p>
               <p className="text-[#6a6460] text-sm leading-relaxed">{show.description}</p>
             </div>
           ))}
@@ -131,7 +141,7 @@ export default async function EPK() {
 
       {/* ── SOCIAL ── */}
       <section className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Follow</p>
+        <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Follow</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Stay Connected</h2>
         <div className="flex flex-wrap gap-4">
           {[
@@ -151,33 +161,33 @@ export default async function EPK() {
       {/* ── BOOKING ── */}
       <section id="contact" className="py-24 bg-[#111111]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Booking</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
-              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[#c9b99a] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[#c9b99a]">
+              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[var(--accent)]">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
               </div>
               <div>
                 <p className="text-xs text-[#6a6460] uppercase tracking-widest mb-1">Email</p>
-                <p className="font-semibold group-hover:text-[#c9b99a] transition-colors text-sm">
+                <p className="font-semibold group-hover:text-[var(--accent)] transition-colors text-sm">
                   Michael.r.cantor@gmail.com
                 </p>
               </div>
             </a>
             <a href="tel:2032167905"
-              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[#c9b99a] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[#c9b99a]">
+              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[var(--accent)]">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
               </div>
               <div>
                 <p className="text-xs text-[#6a6460] uppercase tracking-widest mb-1">Phone</p>
-                <p className="font-semibold group-hover:text-[#c9b99a] transition-colors">
+                <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">
                   (203) 216-7905
                 </p>
               </div>
