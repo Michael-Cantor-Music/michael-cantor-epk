@@ -39,8 +39,18 @@ export default async function EPK() {
             Singer-songwriter · Folk / Pop · New York, NY
           </p>
         </div>
-        <div className="absolute bottom-8 right-8 z-10 flex flex-col items-center gap-2 opacity-40">
-          <div className="w-px h-12 bg-[#f0ede8]" />
+        <div className="absolute bottom-8 right-8 z-10 flex gap-3">
+          {[
+            { label: "Instagram", href: "https://www.instagram.com/michaelrcantor", color: "#E1306C" },
+            { label: "TikTok", href: "https://www.tiktok.com/@michaelrcantor", color: "#010101" },
+            { label: "YouTube", href: "https://youtube.com/@michaelcantor3", color: "#FF0000" },
+          ].map((link) => (
+            <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
+              style={{ borderColor: link.color, color: link.color, backgroundColor: "rgba(255,255,255,0.85)" }}
+              className="px-4 py-2 rounded-full border text-xs font-semibold hover:opacity-80 transition">
+              {link.label}
+            </a>
+          ))}
         </div>
       </section>
 
@@ -148,23 +158,8 @@ export default async function EPK() {
       {/* ── BOOKING ── */}
       <section id="contact" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking / Socials</p>
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold">Get in Touch</h2>
-            <div className="flex flex-wrap gap-4">
-              {[
-                { label: "Instagram", href: "https://www.instagram.com/michaelrcantor", color: "#E1306C" },
-                { label: "TikTok", href: "https://www.tiktok.com/@michaelrcantor", color: "#010101" },
-                { label: "YouTube", href: "https://youtube.com/@michaelcantor3", color: "#FF0000" },
-              ].map((link) => (
-                <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
-                  style={{ borderColor: link.color, color: link.color }}
-                  className="px-6 py-3 rounded-full border text-sm font-semibold hover:opacity-70 transition">
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
               className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
