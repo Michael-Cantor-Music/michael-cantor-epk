@@ -93,7 +93,6 @@ export default async function EPK() {
       <section id="live" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Live</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Past Performances</h2>
-        {/* TODO: Add direct links to live performance videos/recordings */}
         <div className="grid md:grid-cols-2 gap-6">
           {[
             { venue: "FTC", location: "Fairfield, CT", description: "Fairfield Theatre Company — one of Connecticut's premier live music venues." },
@@ -106,6 +105,19 @@ export default async function EPK() {
               <p className="text-[#6a6460] text-sm leading-relaxed">{show.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-10">
+          <a
+            href="https://youtube.com/@michaelcantor3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#FF0000] text-[#FF0000] text-sm font-semibold hover:bg-[#FF0000] hover:text-white transition-colors"
+          >
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            Watch Live on YouTube
+          </a>
         </div>
       </section>
 
