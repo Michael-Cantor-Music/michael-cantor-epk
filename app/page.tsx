@@ -110,21 +110,8 @@ export default async function EPK() {
       {/* ── LIVE ── */}
       <section id="live" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Live</p>
-        <h2 className="text-4xl md:text-5xl font-bold mb-12">Past Performances</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          {[
-            { venue: "FTC", location: "Fairfield, CT", description: "Fairfield Theatre Company — one of Connecticut's premier live music venues." },
-            { venue: "Levitt Pavilion", location: "Westport, CT", description: "Outdoor amphitheater bringing free, world-class performances to the community." },
-          ].map((show) => (
-            <div key={show.venue}
-              className="border border-[#D8D4CE] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
-              <h3 className="text-2xl font-bold mb-1">{show.venue}</h3>
-              <p className="text-[var(--accent)] text-sm mb-4">{show.location}</p>
-              <p className="text-[#6a6460] text-sm leading-relaxed">{show.description}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-10">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Live Performances</h2>
+        <div className="mt-0">
           <a
             href="https://youtube.com/@michaelcantor3"
             target="_blank"
