@@ -1,19 +1,23 @@
 import Image from "next/image";
+import { getArtistImage } from "@/lib/spotify";
 
-export default function EPK() {
+export default async function EPK() {
+  const artistImage = await getArtistImage();
   return (
     <main className="min-h-screen bg-[#0d0d0d] text-[#f0ede8]">
 
       {/* ── HERO ── */}
       <section className="relative h-screen flex items-end overflow-hidden">
-        <Image
-          src="/press-photo.jpg"
-          alt="Michael Cantor"
-          fill
-          priority
-          className="object-cover object-center"
-          style={{ filter: "brightness(0.5)" }}
-        />
+        {artistImage ? (
+          <Image
+            src={artistImage}
+            alt="Michael Cantor"
+            fill
+            priority
+            className="object-cover object-center"
+            style={{ filter: "brightness(0.5)" }}
+          />
+        ) : null}
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
           <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-3">
             Electronic Press Kit
@@ -22,7 +26,7 @@ export default function EPK() {
             Michael<br />Cantor
           </h1>
           <p className="fade-up fade-up-3 text-lg md:text-xl text-[#c9b99a] font-light">
-            Singer-songwriter · Folk / Pop / Rock · Westport, CT
+            Singer-songwriter · Folk / Pop · Westport, CT
           </p>
         </div>
         <div className="absolute bottom-8 right-8 z-10 flex flex-col items-center gap-2 opacity-40">
@@ -42,7 +46,7 @@ export default function EPK() {
           </div>
           <div className="space-y-5 text-[#9a9490] leading-relaxed text-[15px]">
             <p>
-              Michael Cantor is a singer-songwriter based in Westport, Connecticut, crafting intimate folk-pop and rock that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
+              Michael Cantor is a singer-songwriter based in Westport, Connecticut, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
             <p>
               His recent releases — <em>Letters</em>, <em>Sweet Tooth</em>, and <em>Make It Last Forever</em> — showcase an artist refining his voice with each record: open, earnest, and unafraid to sit with the complicated parts of being human.
