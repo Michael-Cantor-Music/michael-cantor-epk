@@ -41,6 +41,14 @@ export default async function EPK() {
               Music that stays with you.
             </h2>
             <div className="w-12 h-px bg-[#c9b99a] mb-8" />
+            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+              <Image
+                src="/bio-photo.jpg"
+                alt="Michael Cantor"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
           </div>
           <div className="space-y-5 text-[#9a9490] leading-relaxed text-[15px]">
             <p>
