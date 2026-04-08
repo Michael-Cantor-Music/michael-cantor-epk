@@ -14,7 +14,7 @@ export default async function EPK() {
             alt="Michael Cantor"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-top"
             style={{ filter: "brightness(0.5)" }}
           />
         ) : null}
