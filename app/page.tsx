@@ -13,7 +13,7 @@ export default async function EPK() {
   const accent = palette.vibrant;
 
   return (
-    <main className="min-h-screen bg-[#F5F2ED] text-[#1a1a1a]"
+    <main className="min-h-screen bg-[#C9A84B] text-[#1a1a1a]"
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── HERO ── */}
@@ -75,7 +75,7 @@ export default async function EPK() {
       </section>
 
       {/* ── MUSIC ── */}
-      <section id="music" className="py-24 bg-[#EDE9E3]">
+      <section id="music" className="py-24 bg-[#C0A044]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Music</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Latest Releases</h2>
@@ -159,7 +159,7 @@ export default async function EPK() {
       </section>
 
       {/* ── BOOKING ── */}
-      <section id="contact" className="py-24 bg-[#EDE9E3]">
+      <section id="contact" className="py-24 bg-[#C0A044]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
