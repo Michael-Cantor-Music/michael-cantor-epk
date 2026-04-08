@@ -1,4 +1,4 @@
-const CHANNEL_ID = "UCHLDDkR-qNPVgtFQFGk4aDw";
+const CHANNEL_ID = "UCW6ZMMUn4pSkheCDGx9eZ5Q";
 
 export interface YouTubeVideo {
   id: string;
