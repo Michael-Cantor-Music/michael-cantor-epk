@@ -27,13 +27,13 @@ export default async function EPK() {
           style={{ filter: "brightness(0.9)" }}
         />
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
-          <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-3">
+          <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[#1a1a1a] mb-3">
             Electronic Press Kit
           </p>
           <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4">
             Michael<br />Cantor
           </h1>
-          <p className="fade-up fade-up-3 text-lg md:text-xl text-[var(--accent)] font-light">
+          <p className="fade-up fade-up-3 text-lg md:text-xl text-[#1a1a1a] font-light">
             Singer-songwriter · Folk / Pop · New York, NY
           </p>
         </div>
