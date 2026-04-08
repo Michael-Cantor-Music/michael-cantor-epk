@@ -110,7 +110,7 @@ export default async function EPK() {
       </section>
 
       {/* ── LIVE ── */}
-      <section id="live" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
+      <section id="live" className="pt-24 pb-8 px-8 md:px-20 max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Live</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Live Performances</h2>
         {videos.length > 0 && (
@@ -146,7 +146,7 @@ export default async function EPK() {
       </section>
 
       {/* ── SOCIAL ── */}
-      <section className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
+      <section className="pt-8 pb-24 px-8 md:px-20 max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Follow</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Stay Connected</h2>
         <div className="flex flex-wrap gap-4">
