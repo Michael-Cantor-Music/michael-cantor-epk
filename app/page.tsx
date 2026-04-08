@@ -148,7 +148,7 @@ export default async function EPK() {
       {/* ── BOOKING ── */}
       <section id="contact" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking / Socials</p>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold">Get in Touch</h2>
             <div className="flex flex-wrap gap-4">
