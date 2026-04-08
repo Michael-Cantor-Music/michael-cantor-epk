@@ -26,7 +26,7 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
           <p className="fade-up fade-up-3 text-lg md:text-xl text-[#c9b99a] font-light">
-            Singer-songwriter · Folk / Pop · Westport, CT
+            Singer-songwriter · Folk / Pop · New York, NY
           </p>
         </div>
         <div className="absolute bottom-8 right-8 z-10 flex flex-col items-center gap-2 opacity-40">
@@ -46,7 +46,7 @@ export default async function EPK() {
           </div>
           <div className="space-y-5 text-[#9a9490] leading-relaxed text-[15px]">
             <p>
-              Michael Cantor is a singer-songwriter based in Westport, Connecticut, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
+              Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
             <p>
               His recent releases — <em>Letters</em>, <em>Sweet Tooth</em>, and <em>Make It Last Forever</em> — showcase an artist refining his voice with each record: open, earnest, and unafraid to sit with the complicated parts of being human.
@@ -161,7 +161,7 @@ export default async function EPK() {
           <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Booking</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
           <p className="text-[#6a6460] mb-12 max-w-lg">
-            Available for venues, festivals, private events, and collaborations throughout Connecticut and the Northeast.
+            Available for venues, festivals, private events, and collaborations throughout New York and the Northeast.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
