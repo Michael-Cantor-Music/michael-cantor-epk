@@ -24,7 +24,7 @@ export default async function EPK() {
           fill
           priority
           className="object-cover object-center"
-          style={{ filter: "brightness(0.7)" }}
+          style={{ filter: "brightness(0.9)" }}
         />
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
           <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-3">
