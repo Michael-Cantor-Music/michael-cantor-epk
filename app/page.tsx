@@ -1,8 +1,11 @@
 import Image from "next/image";
-import { getArtistImage } from "@/lib/spotify";
+import { getArtistImage, getLatestReleases } from "@/lib/spotify";
 
 export default async function EPK() {
-  const artistImage = await getArtistImage();
+  const [artistImage, releases] = await Promise.all([
+    getArtistImage(),
+    getLatestReleases(3),
+  ]);
   return (
     <main className="min-h-screen bg-[#0d0d0d] text-[#f0ede8]">
 
@@ -61,14 +64,27 @@ export default async function EPK() {
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Music</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Latest Releases</h2>
-          <iframe
-            src="https://open.spotify.com/embed/artist/2nyS5xoo0whI3q74gsRmHL?utm_source=generator&theme=0"
-            width="100%"
-            height="352"
-            style={{ borderRadius: 12 }}
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          />
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            {releases.map((release) => (
+              <a
+                key={release.title}
+                href={release.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="relative aspect-square rounded-xl overflow-hidden mb-3">
+                  <Image
+                    src={release.image}
+                    alt={release.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <p className="text-sm font-medium group-hover:text-[#c9b99a] transition-colors">{release.title}</p>
+              </a>
+            ))}
+          </div>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="https://open.spotify.com/artist/2nyS5xoo0whI3q74gsRmHL" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1DB954] text-black text-sm font-semibold hover:opacity-90 transition">
