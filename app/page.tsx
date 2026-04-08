@@ -133,7 +133,7 @@ export default async function EPK() {
         <div className="flex flex-wrap gap-4">
           {[
             { label: "Instagram", href: "https://www.instagram.com/michaelrcantor", color: "#E1306C" },
-            { label: "TikTok", href: "https://www.tiktok.com/@michaelrcantor", color: "#f0ede8" },
+            { label: "TikTok", href: "https://www.tiktok.com/@michaelrcantor", color: "#010101" },
             { label: "YouTube", href: "https://youtube.com/@michaelcantor3", color: "#FF0000" },
           ].map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
