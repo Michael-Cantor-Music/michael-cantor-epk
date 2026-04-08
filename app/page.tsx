@@ -8,16 +8,14 @@ export default async function EPK() {
 
       {/* ── HERO ── */}
       <section className="relative h-screen flex items-end overflow-hidden">
-        {artistImage ? (
-          <Image
-            src={artistImage}
-            alt="Michael Cantor"
-            fill
-            priority
-            className="object-cover object-top"
-            style={{ filter: "brightness(0.5)" }}
-          />
-        ) : null}
+        <Image
+          src="/press-photo.jpg"
+          alt="Michael Cantor"
+          fill
+          priority
+          className="object-cover object-center"
+          style={{ filter: "brightness(0.5)" }}
+        />
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
           <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-3">
             Electronic Press Kit
