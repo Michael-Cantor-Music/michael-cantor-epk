@@ -13,7 +13,7 @@ export default async function EPK() {
   const accent = palette.vibrant;
 
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-[#f0ede8]"
+    <main className="min-h-screen bg-[#F5F2ED] text-[#1a1a1a]"
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── HERO ── */}
@@ -60,7 +60,7 @@ export default async function EPK() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-[#9a9490] leading-relaxed text-[15px]">
+          <div className="space-y-5 text-[#4a4a4a] leading-relaxed text-[15px]">
             <p>
               Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
@@ -75,7 +75,7 @@ export default async function EPK() {
       </section>
 
       {/* ── MUSIC ── */}
-      <section id="music" className="py-24 bg-[#111111]">
+      <section id="music" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Music</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Latest Releases</h2>
@@ -117,7 +117,7 @@ export default async function EPK() {
             { venue: "Levitt Pavilion", location: "Westport, CT", description: "Outdoor amphitheater bringing free, world-class performances to the community." },
           ].map((show) => (
             <div key={show.venue}
-              className="border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
+              className="border border-[#D8D4CE] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
               <h3 className="text-2xl font-bold mb-1">{show.venue}</h3>
               <p className="text-[var(--accent)] text-sm mb-4">{show.location}</p>
               <p className="text-[#6a6460] text-sm leading-relaxed">{show.description}</p>
@@ -159,14 +159,14 @@ export default async function EPK() {
       </section>
 
       {/* ── BOOKING ── */}
-      <section id="contact" className="py-24 bg-[#111111]">
+      <section id="contact" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
-              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[var(--accent)]">
+              className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)]">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
@@ -179,8 +179,8 @@ export default async function EPK() {
               </div>
             </a>
             <a href="tel:2032167905"
-              className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
-              <div className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-[var(--accent)]">
+              className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)]">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
@@ -197,10 +197,10 @@ export default async function EPK() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="py-8 px-8 md:px-20 border-t border-[#1a1a1a]">
+      <footer className="py-8 px-8 md:px-20 border-t border-[#D8D4CE]">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[#3a3a3a]">© 2026 Michael Cantor. All rights reserved.</p>
-          <p className="text-sm text-[#3a3a3a]">michaelcantormusic.com</p>
+          <p className="text-sm text-[#5a5a5a]">© 2026 Michael Cantor. All rights reserved.</p>
+          <p className="text-sm text-[#5a5a5a]">michaelcantormusic.com</p>
         </div>
       </footer>
 
