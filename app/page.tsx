@@ -152,10 +152,7 @@ export default async function EPK() {
       <section id="contact" className="py-24 bg-[#111111]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Booking</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-[#6a6460] mb-12 max-w-lg">
-            Available for venues, festivals, private events, and collaborations throughout New York and the Northeast.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
               className="group flex items-center gap-4 border border-[#2a2a2a] rounded-2xl p-8 hover:border-[#c9b99a] transition-colors">
