@@ -111,31 +111,6 @@ export default async function EPK() {
         </div>
       </section>
 
-      {/* ── PRESS PHOTO ── */}
-      <section className="py-24 bg-[#111111]">
-        <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Press Photos</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Download</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer">
-              <Image
-                src="/press-photo.jpg"
-                alt="Michael Cantor press photo"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300" />
-              <a href="/press-photo.jpg" download
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span className="bg-white text-black text-sm font-semibold px-5 py-2.5 rounded-full">
-                  ↓ Download
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── SOCIAL ── */}
       <section className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.3em] uppercase text-[#c9b99a] mb-8">Follow</p>
