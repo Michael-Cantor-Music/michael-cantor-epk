@@ -29,9 +29,6 @@ export default async function EPK() {
           style={{ filter: "brightness(0.9)" }}
         />
         <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24 max-w-4xl">
-          <p className="fade-up fade-up-1 text-xs tracking-[0.3em] uppercase text-[#1a1a1a] mb-3">
-            Electronic Press Kit
-          </p>
           <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4">
             Michael<br />Cantor
           </h1>
@@ -56,7 +53,6 @@ export default async function EPK() {
 
       {/* ── BIO ── */}
       <section id="bio" className="py-24 px-8 md:px-20 max-w-5xl mx-auto">
-        <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">About</p>
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
@@ -89,7 +85,6 @@ export default async function EPK() {
       {/* ── MUSIC ── */}
       <section id="music" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Music</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Latest Releases</h2>
           <iframe
             src="https://open.spotify.com/embed/album/7MrQ6muRWJ8U0KSdGK63w2?utm_source=generator&theme=0"
@@ -121,7 +116,6 @@ export default async function EPK() {
 
       {/* ── LIVE ── */}
       <section id="live" className="pt-24 pb-8 px-8 md:px-20 max-w-5xl mx-auto">
-        <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Live</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-12">Live Performances</h2>
         {videos.length > 0 && (
           <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -158,7 +152,6 @@ export default async function EPK() {
       {/* ── BOOKING ── */}
       <section id="contact" className="py-24 bg-[#EDE9E3]">
         <div className="px-8 md:px-20 max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] mb-8">Booking</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
