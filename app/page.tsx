@@ -75,27 +75,20 @@ export default async function EPK() {
       {/* ── BIO ── */}
       <section id="bio" className="py-16 md:py-24 px-6 md:px-20 max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2 md:mb-3">
-              "Nothing — I mean nothing — beats a great cheeseburger."
-            </h2>
-            <p className="text-base md:text-lg font-medium mb-6 md:mb-8" style={{ color: "#a08060" }}>— Michael Cantor</p>
-            <div className="w-12 h-px bg-[var(--accent)] mb-6 md:mb-8" />
-            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
-              <Image
-                src="/bio-photo.jpg"
-                alt="Michael Cantor"
-                fill
-                className="object-cover object-top"
-              />
-            </div>
+          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+            <Image
+              src="/bio-photo.jpg"
+              alt="Michael Cantor"
+              fill
+              className="object-cover object-top"
+            />
           </div>
           <div className="space-y-5 text-[#8B6B4A] leading-relaxed text-[15px]">
             <p>
-              Michael Cantor is a New York City based singer/songwriter from Westport, CT. He fell in love with music in his dad's car on their drives back and forth from Yonkers, NY, where Michael was born. They would listen to ELO, Radiohead, and the Allman Brothers on repeat. Those were his earliest influences. He later fell in love with Stevie Ray Vaughan and became obsessed with the guitar.
+              Michael Cantor is a New York City based singer/songwriter from Westport, CT. He fell in love with music in his dad's car on their drives back and forth from Yonkers, NY, where Michael was born. They would listen to ELO, Radiohead, and The Allman Brothers on repeat. Those were his earliest influences.
             </p>
             <p>
-              Years later, Michael found himself writing songs and starting to sing. He found that writing songs made him happy and decided to go to Berklee School of Music. There, his musical influences became songwriters like Bob Dylan, Leif Vollebekk, and John Mayer. Michael says he likes how a song feels in his hands. He knows if his hands are on the same page, he's onto a new song.
+              After years of obsessing over the guitar, Michael found himself writing songs and starting to sing. His musical influences became songwriters like Bob Dylan, Leif Vollebekk, and John Mayer.
             </p>
             <p>
               His debut single was released in 2023, and now he is very excited to be rolling out his debut album. It's a folk/pop record with some fusion sprinkled in. With each song, Michael says he's coming closer to hearing his true voice as an artist.
