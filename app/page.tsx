@@ -51,7 +51,7 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
           <p className="fade-up fade-up-3 text-lg md:text-xl text-[#1a1a1a] font-light">
-            Singer-songwriter · Folk / Pop · New York, NY
+            Singer-songwriter · New York, NY
           </p>
         </div>
         <div className="absolute bottom-8 right-8 z-10 flex gap-3">
