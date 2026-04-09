@@ -19,7 +19,7 @@ export default async function EPK() {
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-start px-6 md:px-20 py-4 md:py-5">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-start px-6 md:px-8 py-4 md:py-5">
         <div className="flex gap-4 md:gap-10 text-sm md:text-lg font-medium drop-shadow-md" style={{ color: "#8B6B4A" }}>
           {[
             { label: "Bio", href: "#bio" },
