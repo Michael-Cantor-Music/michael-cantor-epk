@@ -204,7 +204,7 @@ export default async function EPK() {
       <section id="contact" className="py-16 md:py-24 bg-[#EDE9E3]">
         <div className="px-6 md:px-20 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Get in Touch</h2>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+          <div className="flex justify-center">
             <a href="mailto:Michael.r.cantor@gmail.com"
               className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)] shrink-0">
