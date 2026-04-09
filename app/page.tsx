@@ -49,9 +49,6 @@ export default async function EPK() {
           <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
             Michael<br />Cantor
           </h1>
-          <p className="fade-up fade-up-3 text-sm md:text-lg lg:text-xl font-light group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
-            Singer-songwriter · New York, NY
-          </p>
         </a>
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
           {[
