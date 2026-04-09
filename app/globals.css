@@ -7,8 +7,8 @@ html {
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #F5F2ED;
-  color: #C4504A;
+  background-color: #151210;
+  color: #C9A227;
 }
 
 @keyframes fadeUp {

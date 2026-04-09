@@ -15,12 +15,12 @@ export default async function EPK() {
   const accent = palette.vibrant;
 
   return (
-    <main className="min-h-screen bg-[#F5F2ED] text-[#C4504A]"
+    <main className="min-h-screen bg-[#151210] text-[#C9A227]"
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-start px-6 md:px-8 py-4 md:py-5">
-        <div className="flex gap-4 md:gap-10 text-sm md:text-lg font-bold drop-shadow-md" style={{ color: "#C4504A" }}>
+        <div className="flex gap-4 md:gap-10 text-sm md:text-lg font-bold drop-shadow-md" style={{ color: "#C9A227" }}>
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
@@ -46,13 +46,13 @@ export default async function EPK() {
           style={{ filter: "brightness(0.9)" }}
         />
         <a href="#" className="absolute md:fixed bottom-2 left-6 md:bottom-4 md:left-8 z-50 group">
-          <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#C4504A" }}>
+          <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#C9A227" }}>
             Michael<br />Cantor
           </h1>
         </a>
         {/* Upcoming Shows - fixed top right mirroring nav */}
         <div className="fixed top-0 z-50 py-4 md:py-5 hidden md:flex items-center" style={{ left: "87.5%", transform: "translateX(-50%)" }}>
-          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#C4504A" }}>Upcoming Shows</p>
+          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#C9A227" }}>Upcoming Shows</p>
         </div>
 
         {/* Social buttons */}
@@ -63,7 +63,7 @@ export default async function EPK() {
             { label: "YouTube", href: "https://youtube.com/@michaelcantor3" },
           ].map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
-              style={{ borderColor: "#C4504A", color: "#C4504A", backgroundColor: "rgba(255,255,255,0.85)" }}
+              style={{ borderColor: "#C9A227", color: "#C9A227", backgroundColor: "rgba(21,18,16,0.85)" }}
               className="px-3 py-1.5 md:px-4 md:py-2 rounded-full border text-xs font-semibold hover:opacity-80 transition text-center">
               {link.label}
             </a>
@@ -89,7 +89,7 @@ export default async function EPK() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-[#C4504A] leading-relaxed text-[15px]">
+          <div className="space-y-5 text-[#C9A227] leading-relaxed text-[15px]">
             <p>
               Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
@@ -104,7 +104,7 @@ export default async function EPK() {
       </section>
 
       {/* ── MUSIC ── */}
-      <section id="music" className="py-16 md:py-24 bg-[#EDE9E3]">
+      <section id="music" className="py-16 md:py-24 bg-[#1E1A12]">
         <div className="px-6 md:px-20 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Latest Releases</h2>
           <iframe
@@ -182,8 +182,8 @@ export default async function EPK() {
             },
           ].map((social) => (
             <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer"
-              className="group flex flex-col items-center gap-3 md:gap-4 border border-[#D8D4CE] rounded-2xl p-5 md:p-10 hover:border-[var(--accent)] transition-colors text-center">
-              <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#E8E4DE] flex items-center justify-center transition-transform group-hover:scale-110 duration-300"
+              className="group flex flex-col items-center gap-3 md:gap-4 border border-[#3A3020] rounded-2xl p-5 md:p-10 hover:border-[var(--accent)] transition-colors text-center">
+              <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#2A2418] flex items-center justify-center transition-transform group-hover:scale-110 duration-300"
                 style={{ color: social.color }}>
                 {social.icon}
               </div>
@@ -197,13 +197,13 @@ export default async function EPK() {
       </section>
 
       {/* ── BOOKING ── */}
-      <section id="contact" className="py-16 md:py-24 bg-[#EDE9E3]">
+      <section id="contact" className="py-16 md:py-24 bg-[#1E1A12]">
         <div className="px-6 md:px-20 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-4 md:gap-6">
             <a href="mailto:Michael.r.cantor@gmail.com"
-              className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)] shrink-0">
+              className="group flex items-center gap-4 border border-[#3A3020] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#2A2418] flex items-center justify-center text-[var(--accent)] shrink-0">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
@@ -216,8 +216,8 @@ export default async function EPK() {
               </div>
             </a>
             <a href="tel:2032167905"
-              className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)] shrink-0">
+              className="group flex items-center gap-4 border border-[#3A3020] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#2A2418] flex items-center justify-center text-[var(--accent)] shrink-0">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
@@ -234,10 +234,10 @@ export default async function EPK() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="py-8 px-6 md:px-20 border-t border-[#D8D4CE]">
+      <footer className="py-8 px-6 md:px-20 border-t border-[#3A3020]">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[#C4504A]">© 2026 Michael Cantor. All rights reserved.</p>
-          <p className="text-sm text-[#C4504A]">michaelcantormusic.com</p>
+          <p className="text-sm text-[#C9A227]">© 2026 Michael Cantor. All rights reserved.</p>
+          <p className="text-sm text-[#C9A227]">michaelcantormusic.com</p>
         </div>
       </footer>
 
