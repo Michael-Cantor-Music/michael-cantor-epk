@@ -15,7 +15,7 @@ export default async function EPK() {
   const accent = palette.vibrant;
 
   return (
-    <main className="min-h-screen bg-[#F5F2ED] text-[#1a1a1a]"
+    <main className="min-h-screen bg-[#F5F2ED] text-[#8B6B4A]"
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── NAV ── */}
@@ -86,7 +86,7 @@ export default async function EPK() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-[#4a4a4a] leading-relaxed text-[15px]">
+          <div className="space-y-5 text-[#8B6B4A] leading-relaxed text-[15px]">
             <p>
               Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
@@ -160,7 +160,7 @@ export default async function EPK() {
                   </div>
                 </div>
                 <p className="text-sm font-medium leading-snug group-hover:text-[var(--accent)] transition-colors">{video.title}</p>
-                <p className="text-xs text-[#6a6460] mt-1">{video.published}</p>
+                <p className="text-xs text-[#a08060] mt-1">{video.published}</p>
               </a>
             ))}
           </div>
@@ -214,7 +214,7 @@ export default async function EPK() {
               </div>
               <div>
                 <p className="font-semibold text-lg">{social.label}</p>
-                <p className="text-sm text-[#6a6460] mt-1">{social.handle}</p>
+                <p className="text-sm text-[#a08060] mt-1">{social.handle}</p>
               </div>
             </a>
           ))}
@@ -234,7 +234,7 @@ export default async function EPK() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-[#6a6460] uppercase tracking-widest mb-1">Email</p>
+                <p className="text-xs text-[#a08060] uppercase tracking-widest mb-1">Email</p>
                 <p className="font-semibold group-hover:text-[var(--accent)] transition-colors text-sm">
                   Michael.r.cantor@gmail.com
                 </p>
@@ -248,7 +248,7 @@ export default async function EPK() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-[#6a6460] uppercase tracking-widest mb-1">Phone</p>
+                <p className="text-xs text-[#a08060] uppercase tracking-widest mb-1">Phone</p>
                 <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">
                   (203) 216-7905
                 </p>
@@ -261,8 +261,8 @@ export default async function EPK() {
       {/* ── FOOTER ── */}
       <footer className="py-8 px-8 md:px-20 border-t border-[#D8D4CE]">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[#5a5a5a]">© 2026 Michael Cantor. All rights reserved.</p>
-          <p className="text-sm text-[#5a5a5a]">michaelcantormusic.com</p>
+          <p className="text-sm text-[#8B6B4A]">© 2026 Michael Cantor. All rights reserved.</p>
+          <p className="text-sm text-[#8B6B4A]">michaelcantormusic.com</p>
         </div>
       </footer>
 
