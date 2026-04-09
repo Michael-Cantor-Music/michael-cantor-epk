@@ -45,7 +45,7 @@ export default async function EPK() {
           className="object-cover object-center"
           style={{ filter: "brightness(0.9)" }}
         />
-        <a href="#" className="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 group">
+        <a href="#" className="absolute md:fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 group">
           <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
             Michael<br />Cantor
           </h1>
