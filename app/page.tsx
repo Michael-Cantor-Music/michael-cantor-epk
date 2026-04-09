@@ -24,6 +24,7 @@ export default async function EPK() {
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
+            { label: "Shows", href: "#shows" },
             { label: "Socials", href: "#socials" },
             { label: "Contact", href: "#contact" },
           ].map((link) => (
@@ -50,6 +51,18 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
         </a>
+        {/* Upcoming Shows */}
+        <div className="absolute top-1/2 right-6 md:right-12 -translate-y-1/2 z-10 hidden md:block">
+          <p className="text-xs font-bold uppercase tracking-widest mb-3 drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
+          <div className="flex flex-col gap-2">
+            <div style={{ backgroundColor: "rgba(255,255,255,0.85)", color: "#8B6B4A" }}
+              className="px-4 py-3 rounded-xl text-sm font-medium text-center">
+              <p className="font-bold">Shows coming soon</p>
+              <p className="text-xs mt-0.5 opacity-70">Stay tuned</p>
+            </div>
+          </div>
+        </div>
+
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
           {[
             { label: "Instagram", href: "https://www.instagram.com/michaelrcantor" },
@@ -133,6 +146,15 @@ export default async function EPK() {
               Tidal
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ── SHOWS ── */}
+      <section id="shows" className="py-16 md:py-24 px-6 md:px-20 max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Upcoming Shows</h2>
+        <div className="flex flex-col items-center justify-center py-16 border border-[#D8D4CE] rounded-2xl">
+          <p className="text-xl font-semibold mb-2">Shows coming soon</p>
+          <p className="text-sm text-[#a08060]">Check back for upcoming dates</p>
         </div>
       </section>
 
