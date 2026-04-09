@@ -55,6 +55,9 @@ export default async function EPK() {
           <p className="text-lg font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
+        {/* Frog */}
+        <div className="absolute bottom-16 right-1/3 z-10 text-4xl" style={{ transform: "scaleX(-1)" }}>🐸</div>
+
         {/* Social buttons */}
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
           {[
