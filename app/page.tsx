@@ -92,13 +92,16 @@ export default async function EPK() {
           </div>
           <div className="space-y-5 text-[#8B6B4A] leading-relaxed text-[15px]">
             <p>
-              Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
+              Michael Cantor is a singer/songwriter from Westport, CT. He fell in love with music in his dad's car on their drives back and forth from Yonkers, NY, where Michael was born. They would listen to ELO, Radiohead, and the Allman Brothers on repeat. Those were his earliest influences. He later fell in love with Stevie Ray Vaughan and became obsessed with the guitar.
             </p>
             <p>
-              His recent releases — <em>Letters</em>, <em>Sweet Tooth</em>, and <em>Make It Last Forever</em> — showcase an artist refining his voice with each record: open, earnest, and unafraid to sit with the complicated parts of being human.
+              Years later, Michael found himself writing songs and starting to sing. He found that writing songs made him happy and decided to go to Berklee School of Music. There, his musical influences became songwriters like Bob Dylan, Leif Volabeck, and John Mayer. Michael says he likes how a song feels in his hands. He knows if his hands are on the same page, he's onto a new song.
             </p>
             <p>
-              Michael performs regularly throughout Connecticut and the Northeast, bringing an engaging, stripped-back live show equally at home on an intimate café stage or an outdoor amphitheater.
+              His debut single was released in 2023, and now he is very excited to be rolling out his debut album. It's a folk/pop record with some fusion sprinkled in. With each song, Michael says he's coming closer to hearing his true voice as an artist.
+            </p>
+            <p>
+              When he's not writing, he is searching for New York's best burger or French dip. He says the best two feelings in the world are writing a song he's excited about and enjoying a great burger. Add a pickup basketball run in the morning and a cold beer in the afternoon, and it's his perfect day.
             </p>
           </div>
         </div>
