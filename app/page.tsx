@@ -50,7 +50,7 @@ export default async function EPK() {
           <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4">
             Michael<br />Cantor
           </h1>
-          <p className="fade-up fade-up-3 text-lg md:text-xl text-[#1a1a1a] font-light">
+          <p className="fade-up fade-up-3 text-lg md:text-xl font-light" style={{ color: "#8B6B4A" }}>
             Singer-songwriter · New York, NY
           </p>
         </div>
