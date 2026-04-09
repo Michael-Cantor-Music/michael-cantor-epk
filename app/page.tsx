@@ -47,7 +47,7 @@ export default async function EPK() {
           style={{ filter: "brightness(0.9)" }}
         />
         <a href="#" className="fixed bottom-8 left-8 z-50 group">
-          <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
+          <h1 className="fade-up fade-up-2 text-2xl md:text-4xl font-bold tracking-tight leading-none mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
             Michael<br />Cantor
           </h1>
           <p className="fade-up fade-up-3 text-lg md:text-xl font-light group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
