@@ -127,6 +127,13 @@ export default async function EPK() {
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FF0000] text-white text-sm font-semibold hover:opacity-90 transition">
               YouTube
             </a>
+            <a href="https://tidal.com/artist/32899611/u" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#000000] text-white text-sm font-semibold hover:opacity-90 transition">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996l4.004 4.004 4.004-4.004 4.004 4.004 4.004-4.004L12.012 3.992zM8.008 16.004l-4.004-4.004L0 16.004l4.004 4.004 4.004-4.004zm8.008 0l-4.004-4.004-4.004 4.004 4.004 4.004 4.004-4.004zm3.98-8.008l-4.004 4.004 4.004 4.004L24 11.996l-4.004-4.004z"/>
+              </svg>
+              Tidal
+            </a>
           </div>
         </div>
       </section>
