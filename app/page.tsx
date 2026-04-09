@@ -15,12 +15,12 @@ export default async function EPK() {
   const accent = palette.vibrant;
 
   return (
-    <main className="min-h-screen bg-[#F5F2ED] text-[#3D3530]"
+    <main className="min-h-screen bg-[#F5F2ED] text-[#C4504A]"
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-start px-6 md:px-8 py-4 md:py-5">
-        <div className="flex gap-4 md:gap-10 text-sm md:text-lg font-bold drop-shadow-md" style={{ color: "#3D3530" }}>
+        <div className="flex gap-4 md:gap-10 text-sm md:text-lg font-bold drop-shadow-md" style={{ color: "#C4504A" }}>
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
@@ -46,13 +46,13 @@ export default async function EPK() {
           style={{ filter: "brightness(0.9)" }}
         />
         <a href="#" className="absolute md:fixed bottom-2 left-6 md:bottom-4 md:left-8 z-50 group">
-          <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#3D3530" }}>
+          <h1 className="fade-up fade-up-2 text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-none mb-2 md:mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#C4504A" }}>
             Michael<br />Cantor
           </h1>
         </a>
         {/* Upcoming Shows - fixed top right mirroring nav */}
         <div className="fixed top-0 z-50 py-4 md:py-5 hidden md:flex items-center" style={{ left: "87.5%", transform: "translateX(-50%)" }}>
-          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#3D3530" }}>Upcoming Shows</p>
+          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#C4504A" }}>Upcoming Shows</p>
         </div>
 
         {/* Social buttons */}
@@ -63,7 +63,7 @@ export default async function EPK() {
             { label: "YouTube", href: "https://youtube.com/@michaelcantor3" },
           ].map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
-              style={{ borderColor: "#3D3530", color: "#3D3530", backgroundColor: "rgba(255,255,255,0.85)" }}
+              style={{ borderColor: "#C4504A", color: "#C4504A", backgroundColor: "rgba(255,255,255,0.85)" }}
               className="px-3 py-1.5 md:px-4 md:py-2 rounded-full border text-xs font-semibold hover:opacity-80 transition text-center">
               {link.label}
             </a>
@@ -78,7 +78,7 @@ export default async function EPK() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2 md:mb-3">
               "Nothing — I mean nothing — beats a good cheeseburger."
             </h2>
-            <p className="text-base md:text-lg font-medium mb-6 md:mb-8" style={{ color: "#7a6a62" }}>— Michael Cantor</p>
+            <p className="text-base md:text-lg font-medium mb-6 md:mb-8" style={{ color: "#7B8FD4" }}>— Michael Cantor</p>
             <div className="w-12 h-px bg-[var(--accent)] mb-6 md:mb-8" />
             <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
@@ -89,7 +89,7 @@ export default async function EPK() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-[#3D3530] leading-relaxed text-[15px]">
+          <div className="space-y-5 text-[#C4504A] leading-relaxed text-[15px]">
             <p>
               Michael Cantor is a singer-songwriter based in New York, NY, crafting intimate folk-pop that balances raw honesty with melodic warmth. Drawing on influences ranging from classic Americana to contemporary indie, his songs are built around thoughtful lyricism and a sound that feels both timeless and personal.
             </p>
@@ -189,7 +189,7 @@ export default async function EPK() {
               </div>
               <div>
                 <p className="font-semibold text-sm md:text-lg">{social.label}</p>
-                <p className="text-xs md:text-sm text-[#7a6a62] mt-1 hidden md:block">{social.handle}</p>
+                <p className="text-xs md:text-sm text-[#7B8FD4] mt-1 hidden md:block">{social.handle}</p>
               </div>
             </a>
           ))}
@@ -209,7 +209,7 @@ export default async function EPK() {
                 </svg>
               </div>
               <div className="min-w-0">
-                <p className="text-xs text-[#7a6a62] uppercase tracking-widest mb-1">Email</p>
+                <p className="text-xs text-[#7B8FD4] uppercase tracking-widest mb-1">Email</p>
                 <p className="font-semibold group-hover:text-[var(--accent)] transition-colors text-sm truncate">
                   Michael.r.cantor@gmail.com
                 </p>
@@ -223,7 +223,7 @@ export default async function EPK() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-[#7a6a62] uppercase tracking-widest mb-1">Phone</p>
+                <p className="text-xs text-[#7B8FD4] uppercase tracking-widest mb-1">Phone</p>
                 <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">
                   (203) 216-7905
                 </p>
@@ -236,8 +236,8 @@ export default async function EPK() {
       {/* ── FOOTER ── */}
       <footer className="py-8 px-6 md:px-20 border-t border-[#D8D4CE]">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[#3D3530]">© 2026 Michael Cantor. All rights reserved.</p>
-          <p className="text-sm text-[#3D3530]">michaelcantormusic.com</p>
+          <p className="text-sm text-[#C4504A]">© 2026 Michael Cantor. All rights reserved.</p>
+          <p className="text-sm text-[#C4504A]">michaelcantormusic.com</p>
         </div>
       </footer>
 
