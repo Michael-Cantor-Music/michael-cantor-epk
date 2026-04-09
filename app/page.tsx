@@ -50,9 +50,9 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
         </a>
-        {/* Upcoming Shows - fixed, centered in right half */}
-        <div className="fixed top-0 z-50 py-4 md:py-5 hidden md:flex items-center" style={{ left: "75%", transform: "translateX(-50%)" }}>
-          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
+        {/* Upcoming Shows - fixed, centered in right half vertically */}
+        <div className="fixed z-50 hidden md:flex items-center" style={{ left: "75%", top: "50%", transform: "translate(-50%, -50%)" }}>
+          <p className="text-lg font-bold" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
         {/* Social buttons */}
