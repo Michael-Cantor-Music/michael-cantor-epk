@@ -24,7 +24,7 @@ export default async function EPK() {
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
-            { label: "Live", href: "#live" },
+            { label: "Video", href: "#live" },
             { label: "Socials", href: "#socials" },
             { label: "Contact", href: "#contact" },
           ].map((link) => (
@@ -134,7 +134,7 @@ export default async function EPK() {
 
       {/* ── LIVE ── */}
       <section id="live" className="pt-24 pb-8 px-8 md:px-20 max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12">Live Performances</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Videos</h2>
         {videos.length > 0 && (
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {videos.map((video) => (
