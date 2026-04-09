@@ -77,7 +77,7 @@ export default async function EPK() {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2 md:mb-3">
-              "Nothing — I mean nothing — beats a good cheeseburger."
+              "Nothing — I mean nothing — beats a great cheeseburger."
             </h2>
             <p className="text-base md:text-lg font-medium mb-6 md:mb-8" style={{ color: "#a08060" }}>— Michael Cantor</p>
             <div className="w-12 h-px bg-[var(--accent)] mb-6 md:mb-8" />
