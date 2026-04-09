@@ -50,11 +50,12 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
         </a>
-        {/* Upcoming Shows */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:block">
+        {/* Upcoming Shows - centered in bottom-right quadrant */}
+        <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 z-10 hidden md:block text-center">
           <p className="text-xl font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
+        {/* Social buttons */}
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
           {[
             { label: "Instagram", href: "https://www.instagram.com/michaelrcantor" },
