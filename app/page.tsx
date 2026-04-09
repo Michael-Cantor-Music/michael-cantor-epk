@@ -52,15 +52,8 @@ export default async function EPK() {
           </h1>
         </a>
         {/* Upcoming Shows */}
-        <div className="absolute top-1/2 right-6 md:right-12 -translate-y-1/2 z-10 hidden md:block">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3 drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
-          <div className="flex flex-col gap-2">
-            <div style={{ backgroundColor: "rgba(255,255,255,0.85)", color: "#8B6B4A" }}
-              className="px-4 py-3 rounded-xl text-sm font-medium text-center">
-              <p className="font-bold">Shows coming soon</p>
-              <p className="text-xs mt-0.5 opacity-70">Stay tuned</p>
-            </div>
-          </div>
+        <div className="absolute top-1/3 right-6 md:right-12 -translate-y-1/2 z-10 hidden md:block">
+          <a href="#shows" className="text-lg font-bold drop-shadow-md hover:opacity-70 transition-opacity" style={{ color: "#8B6B4A" }}>Upcoming Shows</a>
         </div>
 
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
