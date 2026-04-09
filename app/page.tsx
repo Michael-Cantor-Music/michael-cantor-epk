@@ -24,7 +24,6 @@ export default async function EPK() {
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
-            { label: "Shows", href: "#shows" },
             { label: "Socials", href: "#socials" },
             { label: "Contact", href: "#contact" },
           ].map((link) => (
@@ -52,8 +51,8 @@ export default async function EPK() {
           </h1>
         </a>
         {/* Upcoming Shows */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:block">
-          <a href="#shows" className="text-xl font-bold drop-shadow-md hover:opacity-70 transition-opacity" style={{ color: "#8B6B4A" }}>Upcoming Shows</a>
+        <div className="absolute top-1/2 right-8 -translate-y-1/2 z-10 hidden md:block">
+          <p className="text-xl font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
@@ -139,15 +138,6 @@ export default async function EPK() {
               Tidal
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* ── SHOWS ── */}
-      <section id="shows" className="py-16 md:py-24 px-6 md:px-20 max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Upcoming Shows</h2>
-        <div className="flex flex-col items-center justify-center py-16 border border-[#D8D4CE] rounded-2xl">
-          <p className="text-xl font-semibold mb-2">Shows coming soon</p>
-          <p className="text-sm text-[#a08060]">Check back for upcoming dates</p>
         </div>
       </section>
 
