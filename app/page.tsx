@@ -50,9 +50,9 @@ export default async function EPK() {
             Michael<br />Cantor
           </h1>
         </a>
-        {/* Upcoming Shows - centered in bottom-right quadrant */}
-        <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 z-10 hidden md:block text-center">
-          <p className="text-xl font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
+        {/* Upcoming Shows - mirrors nav */}
+        <div className="fixed top-0 right-8 z-50 py-4 md:py-5 hidden md:flex items-center">
+          <p className="text-lg font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
         {/* Social buttons */}
