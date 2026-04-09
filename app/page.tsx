@@ -52,8 +52,8 @@ export default async function EPK() {
           </h1>
         </a>
         {/* Upcoming Shows */}
-        <div className="absolute top-1/3 right-6 md:right-12 -translate-y-1/2 z-10 hidden md:block">
-          <a href="#shows" className="text-lg font-bold drop-shadow-md hover:opacity-70 transition-opacity" style={{ color: "#8B6B4A" }}>Upcoming Shows</a>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:block">
+          <a href="#shows" className="text-xl font-bold drop-shadow-md hover:opacity-70 transition-opacity" style={{ color: "#8B6B4A" }}>Upcoming Shows</a>
         </div>
 
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
