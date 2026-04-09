@@ -51,7 +51,7 @@ export default async function EPK() {
           </h1>
         </a>
         {/* Upcoming Shows - fixed top right mirroring nav */}
-        <div className="fixed top-0 right-4 z-50 py-4 md:py-5 hidden md:flex items-center">
+        <div className="fixed top-0 z-50 py-4 md:py-5 hidden md:flex items-center" style={{ left: "87.5%", transform: "translateX(-50%)" }}>
           <p className="text-lg font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
