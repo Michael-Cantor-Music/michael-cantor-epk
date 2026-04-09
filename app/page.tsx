@@ -37,7 +37,7 @@ export default async function EPK() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative h-screen flex items-end overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         <Image
           src="/press-photo.jpg"
           alt="Michael Cantor"
@@ -46,7 +46,7 @@ export default async function EPK() {
           className="object-cover object-center"
           style={{ filter: "brightness(0.9)" }}
         />
-        <div className="relative z-10 px-8 pb-16 md:px-20 md:pb-24">
+        <div className="absolute bottom-8 left-8 z-10">
           <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4" style={{ color: "#8B6B4A" }}>
             Michael<br />Cantor
           </h1>
