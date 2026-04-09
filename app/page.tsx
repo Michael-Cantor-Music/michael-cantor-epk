@@ -55,38 +55,6 @@ export default async function EPK() {
           <p className="text-lg font-bold drop-shadow-md" style={{ color: "#8B6B4A" }}>Upcoming Shows</p>
         </div>
 
-        {/* Frog */}
-        <div className="absolute bottom-12 right-1/3 z-10 w-16 h-16">
-          <svg viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Eyes */}
-            <ellipse cx="28" cy="18" rx="12" ry="11" fill="#4a7c3f"/>
-            <ellipse cx="72" cy="18" rx="12" ry="11" fill="#4a7c3f"/>
-            <ellipse cx="28" cy="18" rx="7" ry="7" fill="#1a1a1a"/>
-            <ellipse cx="72" cy="18" rx="7" ry="7" fill="#1a1a1a"/>
-            <ellipse cx="26" cy="16" rx="2.5" ry="2.5" fill="white"/>
-            <ellipse cx="70" cy="16" rx="2.5" ry="2.5" fill="white"/>
-            {/* Body */}
-            <ellipse cx="50" cy="52" rx="34" ry="26" fill="#5a9e4a"/>
-            {/* Belly */}
-            <ellipse cx="50" cy="56" rx="22" ry="18" fill="#a8d87a"/>
-            {/* Head */}
-            <ellipse cx="50" cy="30" rx="30" ry="20" fill="#5a9e4a"/>
-            {/* Mouth */}
-            <path d="M36 38 Q50 46 64 38" stroke="#3a6e2f" strokeWidth="2" fill="none" strokeLinecap="round"/>
-            {/* Front legs */}
-            <path d="M18 58 Q8 65 4 72" stroke="#4a7c3f" strokeWidth="5" strokeLinecap="round"/>
-            <path d="M82 58 Q92 65 96 72" stroke="#4a7c3f" strokeWidth="5" strokeLinecap="round"/>
-            {/* Feet */}
-            <path d="M4 72 Q0 75 3 77 Q6 74 8 77 Q11 74 4 72" fill="#4a7c3f"/>
-            <path d="M96 72 Q100 75 97 77 Q94 74 92 77 Q89 74 96 72" fill="#4a7c3f"/>
-            {/* Back legs */}
-            <path d="M24 68 Q14 75 10 78" stroke="#4a7c3f" strokeWidth="4" strokeLinecap="round"/>
-            <path d="M76 68 Q86 75 90 78" stroke="#4a7c3f" strokeWidth="4" strokeLinecap="round"/>
-            {/* Nostril dots */}
-            <circle cx="44" cy="32" r="2" fill="#3a6e2f"/>
-            <circle cx="56" cy="32" r="2" fill="#3a6e2f"/>
-          </svg>
-        </div>
 
         {/* Social buttons */}
         <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 z-10 flex flex-col md:flex-row gap-2 md:gap-3">
