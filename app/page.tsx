@@ -19,9 +19,9 @@ export default async function EPK() {
       style={{ "--accent": accent, "--accent-dark": palette.darkVibrant } as React.CSSProperties}>
 
       {/* ── NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 py-4 bg-white/70 backdrop-blur-md border-b border-white/30">
-        <span className="text-sm font-semibold tracking-tight">Michael Cantor</span>
-        <div className="flex gap-6 text-sm font-medium">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 py-5">
+        <span className="text-sm font-semibold tracking-tight text-white drop-shadow-md">Michael Cantor</span>
+        <div className="flex gap-6 text-sm font-medium text-white drop-shadow-md">
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
@@ -29,7 +29,7 @@ export default async function EPK() {
             { label: "Contact", href: "#contact" },
           ].map((link) => (
             <a key={link.label} href={link.href}
-              className="hover:text-[var(--accent)] transition-colors">
+              className="hover:opacity-70 transition-opacity">
               {link.label}
             </a>
           ))}
