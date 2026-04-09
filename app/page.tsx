@@ -74,7 +74,7 @@ export default async function EPK() {
 
       {/* ── BIO ── */}
       <section id="bio" className="py-16 md:py-24 px-6 md:px-20 max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2 md:mb-3">
               "Nothing — I mean nothing — beats a good cheeseburger."
