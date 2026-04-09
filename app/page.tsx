@@ -20,7 +20,7 @@ export default async function EPK() {
 
       {/* ── NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center px-8 md:px-20 py-5">
-        <div className="flex gap-6 text-sm font-medium text-white drop-shadow-md">
+        <div className="flex gap-8 text-base font-medium text-white drop-shadow-md">
           {[
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
