@@ -22,7 +22,6 @@ export default async function EPK() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center px-8 md:px-20 py-5">
         <div className="flex gap-8 text-base font-medium drop-shadow-md" style={{ color: "#8B6B4A" }}>
           {[
-            { label: "Michael Cantor", href: "#" },
             { label: "Bio", href: "#bio" },
             { label: "Music", href: "#music" },
             { label: "Video", href: "#live" },
@@ -47,14 +46,14 @@ export default async function EPK() {
           className="object-cover object-center"
           style={{ filter: "brightness(0.9)" }}
         />
-        <div className="absolute bottom-8 left-8 z-10">
-          <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4" style={{ color: "#8B6B4A" }}>
+        <a href="#" className="fixed bottom-8 left-8 z-50 group">
+          <h1 className="fade-up fade-up-2 text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4 group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
             Michael<br />Cantor
           </h1>
-          <p className="fade-up fade-up-3 text-lg md:text-xl font-light" style={{ color: "#8B6B4A" }}>
+          <p className="fade-up fade-up-3 text-lg md:text-xl font-light group-hover:opacity-70 transition-opacity drop-shadow-md" style={{ color: "#8B6B4A" }}>
             Singer-songwriter · New York, NY
           </p>
-        </div>
+        </a>
         <div className="absolute bottom-8 right-8 z-10 flex gap-3">
           {[
             { label: "Instagram", href: "https://www.instagram.com/michaelrcantor", color: "#E1306C" },
