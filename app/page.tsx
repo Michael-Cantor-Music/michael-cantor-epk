@@ -91,10 +91,7 @@ export default async function EPK() {
               After years of obsessing over the guitar, Michael found himself writing songs and starting to sing. His musical influences became songwriters like Bob Dylan, Leif Vollebekk, and John Mayer.
             </p>
             <p>
-              His debut single was released in 2023, and now he is very excited to be rolling out his debut album. It's a folk/pop record with some fusion sprinkled in. With each song, Michael says he's coming closer to hearing his true voice as an artist.
-            </p>
-            <p>
-              When he's not writing, he is searching for New York's best burger or French dip. He says the best two feelings in the world are writing a song he's excited about and enjoying a great burger. Add a pickup basketball run in the morning and a cold beer in the afternoon, and it's his perfect day.
+              His debut single was released in 2023, and now he is very excited to be rolling out his debut album. It's a folk/pop record with some fusion sprinkled in.
             </p>
           </div>
         </div>
