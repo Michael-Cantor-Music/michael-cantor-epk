@@ -195,7 +195,7 @@ export default async function EPK() {
         <div className="px-6 md:px-20 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">Get in Touch</h2>
           <div className="flex justify-center">
-            <a href="mailto:Michael.r.cantor@gmail.com"
+            <a href="mailto:mgmt@michaelcantor.com"
               className="group flex items-center gap-4 border border-[#D8D4CE] rounded-2xl p-6 md:p-8 hover:border-[var(--accent)] transition-colors">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#E8E4DE] flex items-center justify-center text-[var(--accent)] shrink-0">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -205,7 +205,7 @@ export default async function EPK() {
               <div className="min-w-0">
                 <p className="text-xs text-[#a08060] uppercase tracking-widest mb-1">Email</p>
                 <p className="font-semibold group-hover:text-[var(--accent)] transition-colors text-sm truncate">
-                  Michael.r.cantor@gmail.com
+                  mgmt@michaelcantor.com
                 </p>
               </div>
             </a>
