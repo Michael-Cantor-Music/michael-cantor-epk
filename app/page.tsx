@@ -217,7 +217,7 @@ export default async function EPK() {
       <footer className="py-8 px-6 md:px-20 border-t border-[#D8D4CE]">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[#8B6B4A]">© 2026 Michael Cantor. All rights reserved.</p>
-          <p className="text-sm text-[#8B6B4A]">michaelcantormusic.com</p>
+          <p className="text-sm text-[#8B6B4A]">michaelcantor.com</p>
         </div>
       </footer>
 
